@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/all_title_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+
+        <EditText
+            android:id="@+id/edt_manual_input_name2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+            android:hint="请输入设备名称"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="18px"
+            android:textColor="#000000"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_manual_input_name3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+            android:hint="请输入厂商名称"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="18px"
+            android:textColor="#000000"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_manual_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+            android:hint="请输入厂商ID"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="18px"
+            android:textColor="#000000"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:text="设备型号："
+                android:textColor="#000000"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/edt_manual_input_xh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/list_allshow_item_bg"
+                android:hint="请输入设备型号"
+                android:imeOptions="actionSearch"
+                android:inputType="textMultiLine"
+                android:paddingLeft="18px"
+                android:textColor="#000000"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:text="设备IMEI："
+                android:textColor="#000000"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/edt_manual_input_imei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/list_allshow_item_bg"
+                android:hint="请输入设备IMEI号"
+                android:imeOptions="actionSearch"
+                android:inputType="textMultiLine"
+                android:paddingLeft="18px"
+                android:textColor="#000000"
+                android:textSize="15sp">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_result"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_allshow_item_bg"
+        >
+            <TextView
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备ID："
+                android:textColor="#000000"
+                android:textSize="16sp" >
+            </TextView>
+            <TextView
+                android:paddingLeft="5dp"
+                android:id="@+id/txt_input_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textIsSelectable="true"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_intoid_news"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_allshow_item_bg" >
+
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_manual_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="下一步"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/change_bg_btn"
+
+        />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:id="@+id/txt_ceshiresult"
+
+        />
+    </LinearLayout>
+</LinearLayout>
